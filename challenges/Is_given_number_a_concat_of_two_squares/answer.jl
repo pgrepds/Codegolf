@@ -1,0 +1,1 @@
+f(a,s=lstrip("$a",'0'),l=length(s))=0 in[startswith(last(s,l-i),r"0.+")+parse(Int,last(s,l-i))^0.5%1+parse(Int,first(s,i))^0.5%1 for i in 1:l-1]
