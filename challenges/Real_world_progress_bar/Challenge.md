@@ -20,7 +20,6 @@ You may also input a time in which case the output should be a single horizontal
 
 Otherwise you may represent time as actual time in a unit of your choice or  as one axis (top-to-bottom) in a 2D plot.
 
-
 ### Examples
 
     I: [20,[2,2,2],[3,3,3],[10]]
