@@ -1,1 +1,1 @@
-f(a,s="$a",l=length(s))=0 in[startswith(last(s,l-i),r"0.+")+(parse(Int,last(s,l-i))^.5+parse(Int,first(s,i))^.5)%1 for i in 1:l-1]
+f(a,s="$a",l=length(s))=0 in[occursin(r"^0.+",last(s,l-i))+(parse(Int,last(s,l-i))^.5+parse(Int,s[1:i])^.5)%1 for i=1:l-1]
