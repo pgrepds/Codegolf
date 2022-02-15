@@ -1,0 +1,1 @@
+f(l,s=length(l))=replace("x z typing...","x"=>l[1],"z"=>"$(s>1 ? "and $(s>2 ? "$s others" : l[2]) are" : "is")")
