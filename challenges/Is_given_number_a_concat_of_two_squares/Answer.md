@@ -1,14 +1,14 @@
-# [Julia][1], <s>130</s> <s>122</s> 98 bytes
+# [Julia][1], <s>130</s> <s>122</s> <s>98</s> 91 bytes
     
 ```julia
-~x=√parse(Int,x)
-f(a,s="$a",l=length(s))=0 in[(s[l-i]<'1')+(~last(s,l-i)+~s[1:i])%1 for i=1:l-1]
+!x=√parse(Int,x)%1
+f(a,s="$a",l=length(s))=0∈1:~-l.|>i->s[l-i]<'1'||!s[i+1:end]+!s[1:i]
 ```    
 [Try it online!][2]
 
 Thanks to Sunda R we can save 8 bytes!
 
-Thanks to MarcMush we can save 32 bytes!
+Thanks to MarcMush we can save <s>32</s> 39 bytes!
     
 [1]: https://julialang.org/
-[2]: https://tio.run/##JYtBCsIwEEX3niKI0hmaQkbTQItx7xlKF1m0GomxNBWy6tozeDwvUlOE4f/H48/95ayhuCxz1N/3ZzBj6ODiJx5x04PhQW93Zsuddp2/TjcIiFow6xsIjStse8oowxxmZ8IEgSeF@Rwaqm2Le2L9c2RWU@0KapdhtH5yHh5mgFice4jIGyLOKsEZCZGIpEyQuqRDpUq1KiU5O66U4o9SrvtkBKn0nY5ki7j8AA
+[2]: https://tio.run/##JctBCoMwEAXQfU@h0mKCScm0MaBU9z2DZBGotilpEGMhC@naM/R4XsRGCsOfx2fm@TZagV/X2FfL/O3V4Fp0tSPx@AC7DiniqmSvEmIq09r7@EAO44ot8wzlh5rjVGtau8ZQLS8ppNMUu0ZnULb2JrNgKLVc@0Hb0Vj0Uj3ytO6Qx6QBIFHBSASMBQHnAWHncCpELrZKcBKdN4X4k/PtPjQMRPgOA1xivP4A
