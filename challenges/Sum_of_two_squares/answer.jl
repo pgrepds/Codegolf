@@ -1,1 +1,1 @@
-f(n)=1 in[i^2+j^2==n&&true for i=0:√n,j=0:√n]
+~n=1 in[i^2+j^2==n for i=0:n,j=0:n]
