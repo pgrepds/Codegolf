@@ -1,1 +1,1 @@
-~f=!(0 in(3:length(f).|>i->f[i]==f[i-2]+f[i-1]))
+~f=0∉3:length(f).|>i->f[i]==f[i-2]+f[i-1]

@@ -1,10 +1,10 @@
-# [Julia][1], 48 bytes
+# [Julia][1], <s>48</s> <s>44</s> 43 bytes
     
 ```julia
-~f=!(0 in(3:length(f).|>i->f[i]==f[i-2]+f[i-1]))
+~f=0∉3:length(f).|>i->f[i]==f[i-2]+f[i-1]
 ```    
 [Try it online!][2]
     
     
 [1]: https://julialang.org/
-[2]: https://tio.run/##VY3NCsIwEITveYp4azCV5qdqhfRFQg4eXI2UIBLBg/TV64QiRAibzGS/mftrimf1XpaZ3KbpeEyNOU2XdM23hsTuM8Z2JB@Dc5itDttyqSDEkpXzSnIcLbmRvA8sa@f3kg9we9gWjnHeQh/Kpu4wBryMwug7jX/rPFiLDfypwBitscgETvq/o1jmR6DpiDJYa0ip1Wu1KUmPZ0x5Ss2claiEroWphRWsoqimqKaopgjU8gU
+[2]: https://tio.run/##VY1NCsIwFIT3OUWWLabS/FStkF4kZOHCp5FSRCK4kK71ml4kTihChPCSmbxv5nIfw0E@UprJtp/XW@/H43SK54rq9XMIzUAueGsxG@VX@ZI@RWmdFBxHCa4F7zyLyrqN4D3cDraBo60z0Nu8qVqMHi8tMbpW4d9YB9ZgA3/SM0ZLLDKBk/rvyJb@EWjaoQzWEpJr1VKtc9L1FqY4TtUcZV0IVQpdClOzgqKSopKikiJQ6Qs
