@@ -1,1 +1,1 @@
-f(l,n=length(l)-1)=[binomial(n,k) for k=0:n]==l
+!l=(n=length(l)-1;binomial.(n,0:n)==l)
