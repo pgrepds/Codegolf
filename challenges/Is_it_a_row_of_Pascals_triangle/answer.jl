@@ -1,1 +1,1 @@
-!l=(n=length(l)-1;binomial.(n,0:n)==l)
+!l=binomial.((n=[l;0][2];),0:n)==l
